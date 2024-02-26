@@ -1,0 +1,57 @@
+ /* ==========================================================================
+   Project:     Assignment 1
+   Date:        08/19/23 - File created	
+   Created by:  Khai Truong
+   ========================================================================== */
+   
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+p,a, h1, h2, h3, h4, h5, h6, label, button {font-family: 'ADLaM Display', cursive;}
+.footer-wrapper{color: black;}
+
+.text-grey {color: #6c757d;}
+.text-white {color: #ffffff;}
+/* ==========================================================================
+   Basic Elements
+   ========================================================================== */
+a{color: black;}
+.bg-orange{background-color: #ffc857; }
+.bg-green{background-color: #db3a34;}
+.bg-black{background-color: #000000;}
+.btn-orange {background-color: #B3672B; }
+
+.body-overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 2;}
+.main-wrapper{z-index: 9999;}
+
+.carousel {max-height: 600px;overflow: hidden;}
+
+
+.nav-link .fas {position: relative; top: 2px;}
+/* ==========================================================================
+   Images
+   ========================================================================== */
+.hamster-logo{width: 100px;}
+
+/* ==========================================================================
+   Easter Eggs
+   ========================================================================== */
+
+.hamster-btn{box-shadow: none ; text-decoration: none; background-color: #f8f9fa; padding: 0%; margin: 0%;}
+.hamster-btn:focus, .hamster-btn:active {outline: none; box-shadow: none;}
+
+/* ==========================================================================
+   Form Validation
+   ========================================================================== */
+.error{font-weight: bold; color: red;}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media all and (min-width: 992px) {
+   .navbar .nav-item .dropdown-menu {display: none;}
+   .navbar .nav-item:hover .nav-link {}
+   .navbar .nav-item:hover .dropdown-menu {display: block;}
+   .navbar .nav-item .dropdown-menu {margin-top: 0;}
+}
+
