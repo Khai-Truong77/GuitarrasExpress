@@ -45,9 +45,9 @@
                         <a class="nav-link text-white" href="#contact-section">Contact Us <span class="sr-only"></span></a></li>
                 </ul>
                 <ul class="list-inline ml-auto">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61555361697716"><img src="/wwwroot/img/facebook-logo-color.png"></a></li>
-                    <li class="list-inline-item"><a href="#"><img src="/wwwroot/img/instagram-logo-color.png"></a></li>
-                    <li class="list-inline-item"><button class="d-block btn btn-danger" aria-hidden="true">ORDER NOW!</button></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61555361697716"><img src="/img/facebook-logo-color.png"></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/guitarrasmexicangrill/"><img src="/img/instagram-logo-color.png"></a></li>
+                    <li class="list-inline-item"><button class="d-block btn btn-danger" aria-hidden="true" data-toggle="modal" data-target="#orderNowModal">ORDER NOW!</button></li>
                 </ul>
             </div>
         </nav>
@@ -224,6 +224,33 @@
             </div>
         </div>
     </footer>
+
+    <!-- Order Now Modal -->
+<div class="modal fade" id="orderNowModal" tabindex="-1" aria-labelledby="orderNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderNowModalLabel">Choose Your Location</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6 text-center">
+              <img src="img/location1.jpg" alt="Location 1" class="img-fluid">
+              <button class="btn btn-primary mt-2" onclick="selectRestaurant('restaurant1')">Order at Tom Hill Sr Blvd.</button>
+            </div>
+            <div class="col-6 text-center">
+              <img src="img/location2.jpg" alt="Location 2" class="img-fluid">
+              <button class="btn btn-primary mt-2" onclick="selectRestaurant('restaurant2')">Order at Thomaston Rd.</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     
     <div class="container-fluid px-0 mx-0 bg-dark text-white text-center small">
         <div class="container">
@@ -232,5 +259,31 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        function selectRestaurant(restaurant) {
+            // Sanitize the input to prevent XSS attacks
+            var sanitizedRestaurant = escapeHTML(restaurant);
+
+            // Redirect the user to the appropriate website
+            switch (sanitizedRestaurant) {
+                case 'restaurant1':
+                    window.location.href = 'https://restaurant1.com';
+                    break;
+                case 'restaurant2':
+                    window.location.href = 'https://restaurant2.com';
+                    break;
+                default:
+                    alert('Invalid selection');
+            }
+        }
+
+        // Function to escape HTML
+        function escapeHTML(html) {
+            var el = document.createElement('div');
+            el.innerText = el.textContent = html;
+            return el.innerHTML;
+        }
+    </script>
 </body>
 </html>
