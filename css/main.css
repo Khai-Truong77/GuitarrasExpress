@@ -1,0 +1,95 @@
+ /* ==========================================================================
+   Guitarras Express
+   ========================================================================== */
+   
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+a, h1, h2, h3, h4, h5, h6, label, button {font-family: 'ADLaM Display', cursive;}
+.footer-wrapper{color: black;}
+
+.text-grey {color: #6c757d;}
+.text-white {color: #ffffff;}
+/* ==========================================================================
+   Basic Elements
+   ========================================================================== */
+a{color: black;}
+.bg-orange{background-color: #ffc857; }
+.bg-green{background-color: #6CAC58;}
+.bg-black{background-color: #000000;}
+.bg-red{background-color: #db3a34;}
+
+.body-overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 2;}
+.main-wrapper{z-index: 9999;}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+   .btn-primary:hover{background-color: #db3a34; border-color: transparent;}
+   .btn-white{background-color: #fff;}
+   .btn-white:hover{background-color: #6CAC58; border-color: transparent;}
+   .btn-primary:hover{background-color: #db3a34; border-color: transparent;}
+   .btn-white{background-color: #fff;}
+   .btn-white:hover{background-color: #6CAC58; border-color: transparent;}
+
+   /* ==========================================================================
+   Navbar
+   ========================================================================== */
+   .nav-link .fas {position: relative; top: 2px; margin: 0; padding: 0;}
+   .navbar .social-order-container {display: flex; align-items: center;}
+   .navbar .social-nav {display: flex;margin-bottom: 0;}
+   .navbar .social-nav ul {display: flex;align-items: center;}
+      
+   
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+   .modal-header {border-bottom: none;}
+   .modal-content{background-color: #000000;}
+   .modal-body{border-radius: 0.3rem;}
+
+
+/* ==========================================================================
+   Map
+   ========================================================================== */
+   #map{height: 450px; width: 100%;}
+
+   
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+   .carousel {max-height: 600px;overflow: hidden;}
+   .carousel-item img {height: 600px;width: 100%;object-fit: cover; object-position: center center;}
+
+   .logo {max-width: 200px;}
+   
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (min-width: 0px) {
+   .carousel-item img {height: 300px;width: 100%;object-fit: cover; object-position: center center;}
+}
+
+@media (min-width: 768px) {
+   .carousel-item img {height: 480px;width: 100%;object-fit: cover; object-position: center center;}
+}
+
+@media (min-width: 992px) {
+   .carousel-item img {height: 600px;width: 100%;object-fit: cover; object-position: center center;}
+
+   .navbar .navbar-collapse {display: flex; justify-content: space-between;}
+   .navbar .navbar-nav {margin-right: auto;}
+   .navbar .social-order-container {margin-left: auto;}
+   .navbar .social-nav ul {display: flex;align-items: center;}
+}
+
+@media (max-width: 992px) {
+   .navbar .navbar-collapse {flex-direction: column; align-items: flex-end;}
+   .navbar .navbar-nav {align-items: flex-end;}
+   .navbar .social-order-container {flex-direction: column; align-items: flex-end; width: 100%;}
+   .navbar .social-nav {justify-content: flex-end; width: 100%;}
+   .navbar .social-nav ul {justify-content: flex-end;}
+   .navbar .social-nav + .btn {align-self: flex-end;margin-top: 10px;}
+}
