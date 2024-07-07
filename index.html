@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guitarras Mexican Restaurant - Home</title>
     <link rel="stylesheet" href="admin/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="admin/assets/fontawsome5/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -42,17 +42,12 @@
                 </ul>
                 <div class="d-flex align-items-center ml-auto social-order-container">
                     <ul class="social-nav list-inline mb-0">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61555361697716"><img src="img/facebook-logo-color.png" alt="Facebook"></a></li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/guitarrasmexicangrill/"><img src="img/instagram-logo-color.png" alt="Instagram"></a></li>
                     </ul>
                     <button class="btn btn-danger ml-2" aria-hidden="true" data-toggle="modal" data-target="#orderNowModal">ORDER NOW!</button>
                 </div>
             </div>
         </nav>
-        
-        
-        
-
 
         <section class="">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -117,21 +112,20 @@
             </div>
         </section>
 
-        <section class="py-4 bg-red" aria-label="Our-Story">
+        <section class="py-4 bg-red bg-pattern text-black" aria-label="Our-Story">
             <div class="container">
-                <h1 class="text-uppercase text-white text-center mb-4">Menu & Locations</h1>
+
                 <div class="row ">
                     <div class="col-12 d-flex justify-content-center">
-                        <a href="img/menu/2023 Guitarras Menu.pdf"><img class="img-fit img-fluid " src="img/menu/menu-small.jpg" alt="" style="height: 400px;"></a>
+                        <a href="img/menu/2023 Guitarras Menu.pdf"><img class="img-fluid mb-3" src="img/menu/menu-small.jpg" alt="" style="height: 400px;"></a>
                     </div>
                     <div class="col-12 col-md-12 text-center text-white mb-4 mb-md-0">
                         <div class="row text-center">
                             <div class="col-12">
-                                <h3 class="mt-5 text-center">Come Visit Our Macon Locations</h3>
                             <ul class="list-inline mb-0 justify-content-center align-items-center">
                                 <li class="list-inline-item"><a class="btn btn-light" href="https://g.co/kgs/dLec2c2">Tom Hill Sr Blvd.</a></li>
                                 <li class="list-inline-item"><a class="btn btn-light" href="https://g.co/kgs/4XpdxJu">Thomaston Rd.</a></li>
-                                <li class="list-inline-item mt-2"><button class="btn btn-dark">Downtown Coming Soon</button></li>
+                                <li class="list-inline-item mt-2"><a class="btn btn-light" href="https://g.co/kgs/dqsGb3A">Spring St.</a></li>
                             </ul>
                             </div>
                         </div>
@@ -165,68 +159,113 @@
     </div>
 
 
-    <footer class="bg-black py-5">
+    <footer class="bg-black pt-5 pb-3">
         <div class="container-fluid text-white">
             <div class="row align-items-center">
-                <div class="col-12 text-center py-5">
-                    <img class="logo" src="img/logo.png">
-                </div>
                 <div class="col-12 mb-3" id="map"></div>
-                <div class="container" id="contact-section">
-                    <div class="row">
-                        <div class="col-sm-4 col-md-4 col-xs-12">
+                <div class="container-fluid" id="contact-section">
+                    <div class="col-12 text-center">
+                        <img class="logo" src="img/logo.png">
+                    </div>
+                    <p class="title h2 text-center mb-5 text-adlam">Locations</p>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-sm-12 col-md-4 px-5 mb-3 mb-md-0">
                             <section>
                                 <div class="contact-us text-center">
-                                    <p class="title h3">Location</p>
-                                    <address>
-                                        5577 Thomaston Rd Suite #500<br>
-                                        Macon, GA 31220<br>
-                                        <a class="text-primary text-left" href="tel:+14782590351">(478) 259-0351</a><br>                      
+                                    <address class="font-weight-bold">
+                                        157 Tom Hill Sr Blvd #205<br>
+                                        Macon, GA 31210<br>
+                                        <a class="text-primary text-left" href="tel:+14782548222">(478) 254-8222</a><br>
+                                        <ul class="list-inline mt-2">
+                                            <li class="list-inline-item"><a href="https://www.facebook.com/guitarrasmexicangrill?mibextid=JRoKGi"><img src="img/facebook-logo-color.png"></a></li>
+                                            <li class="list-inline-item"><a href="https://www.instagram.com/guitarrasmexicangrill/"><img src="img/instagram-logo-color.png"></a></li>
+                                        </ul>                        
                                     </address>
-                                    <address>
-                                        5577 Thomaston Rd Suite #500<br>
-                                        Macon, GA 31220<br>
-                                        <a class="text-primary text-left" href="tel:+14782590351">(478) 259-0351</a><br>                      
-                                    </address>      
-                                </div>
-                            </section>
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-xs-12">
-                            <section>
-                                <div class="hours text-center">
                                     <p class="title h3">Hours</p>
                                     <table class="table">
                                         <tbody>
                                             <tr>
                                                 <td>Monday to Thursday:</td>
-                                                <td>11:00am to 10:00pm</td>
+                                                <td>11:00am - 9:30pm</td>
                                             </tr>
                                             <tr>
                                                 <td>Friday to Saturday:</td>
-                                                <td>11:00am to 11:00pm</td>
+                                                <td>11:00am - 10:30pm</td>
                                             </tr>
                                             <tr>
                                                 <td>Sunday:</td>
-                                                <td>11:00am to 9:00pm</td>
+                                                <td>11:00am - 9:00pm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-sm-12 col-md-4 px-5 mb-3 mb-md-0">
+                            <section>
+                                <div class="hours text-center">
+                                    <address class="font-weight-bold">
+                                        5577 Thomaston Rd Suite #500<br>
+                                        Macon, GA 31220<br>
+                                        <a class="text-primary text-left" href="tel:+14782590351">(478) 259-0351</a><br>
+                                        <ul class="list-inline mt-2">
+                                            <li class="list-inline-item"><a href="https://www.facebook.com/people/Guitarras-Mexican-Grill-Express/61555361697716/"><img src="img/facebook-logo-color.png"></a></li>
+                                            <li class="list-inline-item"><a href="https://www.instagram.com/guitarrasmexicangrill/"><img src="img/instagram-logo-color.png"></a></li>
+                                        </ul>                      
+                                    </address>  
+                                    <p class="title h3">Hours</p>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Monday to Thursday:</td>
+                                                <td>11:00am - 9:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Friday to Saturday:</td>
+                                                <td>11:00am - 10:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunday:</td>
+                                                <td>11:00am - 8:00pm</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </section>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-xs-12">
+                        <div class="col-sm-12 col-md-4 px-5 mb-3 mb-md-0">
                             <section>
-                                <div class="follow-us text-center">
-                                    <p class="title h3">Find Us Here</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61555361697716"><img src="img/facebook-logo-color.png"></a></li>
-                                        <li class="list-inline-item"><a href="#"><img src="img/instagram-logo-color.png"></a></li>
-                                    </ul>
+                                <div class="hours text-center">
+                                    <address class="font-weight-bold">
+                                        781 Spring St, Macon, GA 31201<br>
+                                        Macon, GA 31201<br>
+                                        <a class="text-primary text-left" href="tel:+14782594026">(478) 259-4026</a><br>
+                                        <ul class="list-inline mt-2">
+                                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=61559693325537"><img src="img/facebook-logo-color.png"></a></li>
+                                            <li class="list-inline-item"><a href="https://www.instagram.com/guitarrasmexicangrill/"><img src="img/instagram-logo-color.png"></a></li>
+                                        </ul>                        
+                                    </address>  
+                                    <p class="title h3">Hours</p>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Monday to Saturday:</td>
+                                                <td>11:00am - 8:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunday:</td>
+                                                <td>Closed</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </section>
                         </div>
-                        <div class="col-12 text-center">
-                            <p class="h6">Contact Us: <br><a class="text-primary h6" href="mailto:Guitarrasmexicangrillexpressllc@outlook.com">Guitarrasmexicangrillexpressllc@outlook.com</a></p>
+                        <div class="col-sm-12 col-md-12 col-xs-12 mt-0 mt-md-3">
+                            <section>
+                                <div class="follow-us text-center">
+                                <p class="h6 text-center">Contact Us: <br><a class="text-primary h6" href="mailto:Guitarrasmexicangrillexpressllc@outlook.com">Guitarrasmexicangrillexpressllc@outlook.com</a></p>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -235,28 +274,28 @@
     </footer>
 
     <!-- Order Now Modal -->
-<div class="modal p-3 fade" id="orderNowModal" tabindex="-1" aria-labelledby="orderNowModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-red text-white">
-          <h5 class="modal-title" id="orderNowModalLabel">Choose Your Location</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body bg-black">
-          <div class="row align-items-center">
-            <div class="col-12 col-md-6 mb-3 text-center">
-              <img src="img/tom-hill-location.jpg" alt="Location 1" class="img-fit img-fluid rounded">
-              <button class="btn btn-white btn-block mt-2" onclick="selectRestaurant('restaurant1')">Order at <br>Tom Hill Sr Blvd.</button>
+    <div class="modal p-3 fade" id="orderNowModal" tabindex="-1" aria-labelledby="orderNowModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-red text-white">
+              <h5 class="modal-title" id="orderNowModalLabel">Choose Your Location</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="col-12 col-md-6 mb-3 text-center">
-              <img src="img/thomaston-location.jpg" alt="Location 2" class="img-fit img-fluid rounded">
-              <button class="btn btn-white btn-block mt-2" onclick="selectRestaurant('restaurant2')">Order at <br>Thomaston Rd.</button>
+            <div class="modal-body bg-black">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 mb-3 text-center">
+                  <img src="img/tom-hill-location.jpg" alt="Location 1" class="img-fit img-fluid rounded">
+                  <button class="btn btn-white btn-block mt-2" onclick="selectRestaurant('restaurant1')">Order at <br>Tom Hill Sr Blvd.</button>
+                </div>
+                <div class="col-12 col-md-6 mb-3 text-center">
+                  <img src="img/thomaston-location.jpg" alt="Location 2" class="img-fit img-fluid rounded">
+                  <button class="btn btn-white btn-block mt-2" onclick="selectRestaurant('restaurant2')">Order at <br>Thomaston Rd.</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
   
     
     <div class="container-fluid px-0 mx-0 bg-dark text-white text-center small">

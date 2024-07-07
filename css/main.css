@@ -5,22 +5,22 @@
 /* ==========================================================================
    Typography
    ========================================================================== */
-a, h1, h2, h3, h4, h5, h6, label, button {font-family: 'ADLaM Display', cursive;}
-.footer-wrapper{color: black;}
-
-.text-grey {color: #6c757d;}
-.text-white {color: #ffffff;}
+   a, h1, h2, h3, h4, h5, h6, label, button {font-family: 'ADLaM Display', cursive;}
+   .footer-wrapper{color: black;}
 /* ==========================================================================
    Basic Elements
    ========================================================================== */
-a{color: black;}
-.bg-orange{background-color: #ffc857; }
-.bg-green{background-color: #6CAC58;}
-.bg-black{background-color: #000000;}
-.bg-red{background-color: #db3a34;}
+   a{color: black;}
+   .bg-orange{background-color: #ffc857; }
+   .bg-green{background-color: #6CAC58;}
+   .bg-black{background-color: #000000;}
+   .bg-red{background-color: #E42D28;}
+   .bg-pattern::before {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/img/guitarras-pattern-clear.png'); background-size: cover; background-repeat: repeat; opacity: 1; pointer-events: none;}
+   .bg-pattern {position: relative; background-image: url('/img/guitarras-pattern-clear.png'); background-size: cover; background-repeat: repeat; background-blend-mode: overlay;
+  }
 
-.body-overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 2;}
-.main-wrapper{z-index: 9999;}
+   .body-overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 2;}
+   .main-wrapper{z-index: 9999;}
 
 /* ==========================================================================
    Components
@@ -31,6 +31,16 @@ a{color: black;}
    .btn-primary:hover{background-color: #db3a34; border-color: transparent;}
    .btn-white{background-color: #fff;}
    .btn-white:hover{background-color: #6CAC58; border-color: transparent;}
+
+   .table td{padding: .5rem !important;}
+
+
+   /* ==========================================================================
+   Text
+   ========================================================================== */
+   .text-adlam{font-family: 'ADLaM Display', cursive;}
+   .text-grey {color: #6c757d;}
+   .text-white {color: #ffffff;}
 
    /* ==========================================================================
    Navbar
@@ -55,13 +65,11 @@ a{color: black;}
    ========================================================================== */
    #map{height: 450px; width: 100%;}
 
-   
-
 /* ==========================================================================
    Images
    ========================================================================== */
    .carousel {max-height: 600px;overflow: hidden;}
-   .carousel-item img {height: 600px;width: 100%;object-fit: cover; object-position: center center;}
+   .carousel-item img {height: 600px;width: 100%; object-fit: cover; object-position: center center;}
 
    .logo {max-width: 200px;}
    
@@ -78,7 +86,6 @@ a{color: black;}
 
 @media (min-width: 992px) {
    .carousel-item img {height: 600px;width: 100%;object-fit: cover; object-position: center center;}
-
    .navbar .navbar-collapse {display: flex; justify-content: space-between;}
    .navbar .navbar-nav {margin-right: auto;}
    .navbar .social-order-container {margin-left: auto;}
