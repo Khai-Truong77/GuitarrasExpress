@@ -59,6 +59,9 @@
    .modal-content{background-color: #000000;}
    .modal-body{border-radius: 0.3rem;}
 
+   #confirmationModal .modal-content {
+      background-color: white;
+  }
 
 /* ==========================================================================
    Map
