@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     initMap();
+    initAlertClose();
 
     // Bind the click events to the buttons
     document.querySelectorAll('.order-location-btn').forEach(button => {
@@ -9,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Close alert button function
+function initAlertClose() {
+    const alertModal = document.querySelector(".alert");
+    const btnCloseAlert = document.querySelector(".btn-close-alert");
+
+    if (alertModal && btnCloseAlert) {
+        btnCloseAlert.addEventListener("click", function () {
+            alertModal.classList.remove("d-flex");
+            alertModal.classList.add("d-none");
+        });
+    }
+}
 
 function initMap() {
     var locations = [
